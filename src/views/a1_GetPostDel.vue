@@ -93,13 +93,13 @@ const deleteImg = async () => {
     <section class="card">
         <h3>2. POST 请求（提交数据）</h3>
         <button @click="postImg">发送 POST 请求提交文章</button>
-        <p v-if="postResult" class="success-msg">返回的数据：{{ postResult }}</p>
+        <p v-if="postResult" class="success-msg">【返回的数据】：{{ postResult }}</p>
     </section>
     <!-- delete 请求展示区 -->
     <section class="card">
         <h3>3. delete 请求（删除数据）</h3>
         <button @click="deleteImg">del 发送删除请求</button>
-        <p v-if="delResult" class="success-msg">返回的数据：{{ delResult }}</p>
+        <p v-if="delResult" class="success-msg">【返回的数据】：{{ delResult }}</p>
     </section>
 </template>
 <style scoped></style>

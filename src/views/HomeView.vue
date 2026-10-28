@@ -33,7 +33,7 @@ const fetchData = async () => {
 
 
 // 4. onMounted 钩子：当这个组件在页面上挂载（渲染）完成后，立刻执行的代码
-// 对比 AJAX：这就相当于你以前写的 window.onload 或者 jQuery 的 $(document).ready()
+// 对比 AJAX：这就相当于以前写的 window.onload 或者 jQuery 的 $(document).ready()
 // 页面加载时发送请求
 onMounted(() => {
     fetchData() // 页面一打开，就自动触发请求
@@ -51,10 +51,10 @@ onMounted(() => {
         <!-- 
         插值表达式 {{ }}
         当上面的 fetchData 成功拿到数据并修改了 info 的值后，
-        这里的文字会自动变成从服务器请求回来的标题！
+        这里的文字会自动变成从服务器请求回来的标题
       -->
         <p class="result-box">服务器返回的标题是：{{ info }}</p>
-        <hr/>
+        <hr />
     </main>
 </template>
 <style scoped>
