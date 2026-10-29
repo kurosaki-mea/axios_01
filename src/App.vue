@@ -9,6 +9,8 @@ import a2_baseConfig from './views/a2_baseConfig.vue';
 import a2_baseConfigCreate from './views/a2_baseConfigCreate.vue';
 // 3. 模块化
 import a3_Modular from './views/a3_Modular.vue';
+// 4. 拦截器 interceptors request response
+import a4_Interceptors from './views/a4_Interceptors.vue';
 
 </script>
 
@@ -21,6 +23,8 @@ import a3_Modular from './views/a3_Modular.vue';
     <a2_baseConfigCreate />
     <hr />
     <a3_Modular />
+    <hr />
+    <a4_Interceptors />
   </div>
 </template>
 
