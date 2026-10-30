@@ -1,5 +1,5 @@
 /*
-a3_request.ts（网络请求底层配置）
+a4_request.ts（网络请求底层配置）
 备忘核心：负责抽离公共配置，通过 axios.create 创建独立的网络请求实例，
 统一管理基础路径（baseURL）和超时时间。
 
@@ -36,12 +36,12 @@ service.interceptors.response.use(
     (response) => {
         console.log('【拦截器-响应后】数据安全返回！飞机落地开始处理货物', response);
 
-        // 经典操作：在这里直接把响应的 data 剥离出来！
+        // 经典操作：在这里直接把响应的 data 剥离出来
         // 这样组件里拿到的一直接就是核心数据，不用每次都写 res.data 了
         // return response;
         //在响应拦截器里直接做一次“脱壳处理”：
         return response.data;
-        // 🌟核心优化：直接把最外层的包装剥掉，只把里面的 data 传给组件！
+        // 🌟核心优化：直接把最外层的包装剥掉，只把里面的 data 传给组件
     },(error) => {
         // 服务器响应报错（如 404, 500 等）
         console.log('【拦截器-响应错误】服务器出小差了：',error);
