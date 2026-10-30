@@ -42,6 +42,7 @@ service.interceptors.response.use(
         //在响应拦截器里直接做一次“脱壳处理”：
         return response.data;
         // 🌟核心优化：直接把最外层的包装剥掉，只把里面的 data 传给组件
+        // 然后 a4_Interceptors.vue 里接收返回数据不用res.data 直接 res 就行
     },(error) => {
         // 服务器响应报错（如 404, 500 等）
         console.log('【拦截器-响应错误】服务器出小差了：',error);
