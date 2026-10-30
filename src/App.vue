@@ -11,6 +11,8 @@ import a2_baseConfigCreate from './views/a2_baseConfigCreate.vue';
 import a3_Modular from './views/a3_Modular.vue';
 // 4. 拦截器 interceptors request response
 import a4_Interceptors from './views/a4_Interceptors.vue';
+// 5. 错误状态码
+import a51_Interceptors from './views/a51_Interceptors.vue';
 
 </script>
 
@@ -24,7 +26,8 @@ import a4_Interceptors from './views/a4_Interceptors.vue';
     <hr />
     <a3_Modular />
     <hr />
-    <a4_Interceptors />
+    <a4_Interceptors /><hr />
+    <a51_Interceptors />
   </div>
 </template>
 
