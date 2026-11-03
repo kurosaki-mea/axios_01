@@ -1,7 +1,7 @@
 // ==========================================
 // 接口文件：a52_post.ts
 // ==========================================
-import request from '@/utils/a52_request' // 🌟 必须引入你的新底座！
+import request from '@/utils/a52_request' // 必须引入新底座 a52_request，里面配置了开关
 
 export interface PostItem {
     userId: number;
