@@ -30,7 +30,7 @@ import a52_InterceptorsLoading from './views/a52_InterceptorsLoading.vue';
   </div>
 </template>
 <!-- 
-这些我都能看懂，先写个loading.ts来控制开关和计数器，每请求一次就运行一次或者加一，
+先写个loading.ts来控制开关和计数器，每请求一次就运行一次或者加一，
 如果这个key为false就是关闭这个加载动态图，然后写个request.ts用来创建axios实例，
 在这里面引入那个loading开关，在有请求拦截器和响应拦截器的原本基础上，
 分别加上一个开启load和关闭load函数方法，这个axios单独的实例就写好了，
