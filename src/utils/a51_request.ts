@@ -15,6 +15,7 @@ const service = axios.create({
 // 1. 请求拦截器（发车前）
 service.interceptors.request.use(
     (config) => {
+        console.log('查看axios发送的整个请求内容对象：',config)
         console.log('【拦截器-请求前】准备出发，处理完事就起飞！正在发送请求到：', config.url)
         // 可以在这里统一携带 Token
         // const token = localStorage.getItem('token');

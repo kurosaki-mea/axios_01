@@ -13,6 +13,9 @@ import a3_Modular from './views/a3_Modular.vue';
 import a4_Interceptors from './views/a4_Interceptors.vue';
 // 5. 错误状态码
 import a51_Interceptors from './views/a51_Interceptors.vue';
+// 5.1 Loading
+// 6. 请求取消与防止重复提交
+import a60_InterceptorsLoading from './views/a60_InterceptorsLoading.vue';
 
 </script>
 
@@ -26,8 +29,11 @@ import a51_Interceptors from './views/a51_Interceptors.vue';
     <hr />
     <a3_Modular />
     <hr />
-    <a4_Interceptors /><hr />
+    <a4_Interceptors />
+    <hr />
     <a51_Interceptors />
+    <hr />
+    <a60_InterceptorsLoading />
   </div>
 </template>
 
