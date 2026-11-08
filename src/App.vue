@@ -15,7 +15,7 @@ import a4_Interceptors from './views/a4_Interceptors.vue';
 import a51_Interceptors from './views/a51_Interceptors.vue';
 // 5.1 Loading
 // 6. 请求取消与防止重复提交
-import a60_InterceptorsLoading from './views/a60_InterceptorsLoading.vue';
+import a60_AbortController from './views/a60_AbortController.vue';
 
 </script>
 
@@ -33,7 +33,7 @@ import a60_InterceptorsLoading from './views/a60_InterceptorsLoading.vue';
     <hr />
     <a51_Interceptors />
     <hr />
-    <a60_InterceptorsLoading />
+    <a60_AbortController />
   </div>
 </template>
 
