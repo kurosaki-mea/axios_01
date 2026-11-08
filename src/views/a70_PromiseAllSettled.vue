@@ -53,14 +53,14 @@ Promise.allSettled()，返回一个对象数组，数组里面是各个对象
 
 results[0]就是第一个，然后内容是：
     {
-        status: "fulfilled",
+        status: "fulfilled", // 状态：成功到达
         value: { 我们想要的 请求来的数据内容 }
     }
 
 如果请求失败了，那么里面就是：
     {
         status: "rejected",    // 这个就是失败的
-        reason: 失败报错的内容信息
+        reason: Error("...") 失败报错的内容信息
     }
 
 
