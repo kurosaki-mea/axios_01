@@ -16,6 +16,8 @@ import a51_Interceptors from './views/a51_Interceptors.vue';
 // 5.1 Loading
 // 6. 请求取消与防止重复提交
 import a60_AbortController from './views/a60_AbortController.vue';
+// 70. 并发请求管理
+import a70_PromiseAllSettled from './views/a70_PromiseAllSettled.vue';
 
 </script>
 
@@ -34,6 +36,8 @@ import a60_AbortController from './views/a60_AbortController.vue';
     <a51_Interceptors />
     <hr />
     <a60_AbortController />
+    <hr />
+    <a70_PromiseAllSettled />
   </div>
 </template>
 
